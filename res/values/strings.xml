@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Reddit Reader</string>
+    <string name="title_post_detail">Post Detail</string>
+    
+    <string name="reddit_json_url">http://www.reddit.com/.json</string>
+    
+    <string name="msg_please_wait">Please wait</string>
+    <string name="msg_loading_posts">Loading posts &#8230;</string>
+    <string name="msg_external_url">This post navigates to an external website: </string>
+    <string name="msg_error_loading_posts">ERROR LOADING POSTS</string>
+    <string name="msg_end_of_line">End of line.</string>
+    
+    <string name="lbl_submitted">submitted</string>
+    <string name="lbl_by">by</string>
+    <string name="lbl_browser">Launch in browser</string>
+    <string name="lbl_prev">Previous posts</string>
+    <string name="lbl_next">More posts</string>
+    <string name="lbl_reset">Reset</string>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:gravity="top"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    android:id="@+id/post_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:textSize="18sp"
+	    android:textColor="@color/blue"
+	    android:textIsSelectable="true"
+	    tools:context="net.kismo.redditreader.PostDetailFragment" />
+	
+	<LinearLayout 
+		android:id="@+id/linearLayout2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="top"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/bg_round_rect"
+	    android:orientation="vertical"
+	    >
+	    
+		<TextView 
+		    android:id="@+id/post_detail"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:textSize="14sp"
+		    android:textColor="@color/dark_gray"
+		    android:textIsSelectable="true"
+		    tools:context="net.kismo.redditreader.PostDetailFragment" />
+		
+		<Button
+		    android:id="@+id/btn_url"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@drawable/btn_gray"
+		    android:layout_gravity="center_horizontal"
+		    android:textColor="@color/white"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginTop="20dp"
+		    android:layout_marginRight="20dp"
+		    android:text="@string/lbl_browser"
+		    style="@style/button_text"
+		    android:contentDescription="@null"
+		 />
+	</LinearLayout>
+</LinearLayout>
+

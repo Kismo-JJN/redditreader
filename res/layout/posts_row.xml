@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="0dp" >
+ 
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+      	android:layout_marginRight="10dp"
+      	android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+        
+        <ImageView
+		    android:id="@+id/postUpVote"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal"
+		    android:contentDescription="@null"
+		    android:src="@drawable/arrow_up" />
+	    
+	    <TextView
+	        android:id="@+id/postScore"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:textStyle="bold"
+	        android:textColor="@color/silver" />
+	    
+        <ImageView
+		    android:id="@+id/postDownVote"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal"
+		    android:contentDescription="@null"
+		    android:src="@drawable/arrow_down" />
+     </LinearLayout>
+    
+    <ImageView
+	    android:id="@+id/postThumbnail"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="top"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:contentDescription="@null"
+	    android:src="@null" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:paddingBottom="5dp"
+        android:orientation="vertical" >
+
+	    <TextView
+	        android:id="@+id/postTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="top"
+	        android:textSize="16sp"
+	        android:textStyle="normal"
+	        android:textColor="@color/blue"
+	        android:ellipsize="end"
+	        android:maxLines="1"
+	         />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/postSubmittedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/dark_gray"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/postSubmittedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:textStyle="normal"
+                android:textSize="12sp" />
+        </LinearLayout>
+		<TextView
+			android:id="@+id/postSubmittedByUser"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/blue"
+			android:textStyle="normal"
+			android:textSize="12sp" />
+        <TextView
+	        android:id="@+id/postCommentsCount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="left"
+            android:textColor="@color/dark_gray"
+	        android:textStyle="bold"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
